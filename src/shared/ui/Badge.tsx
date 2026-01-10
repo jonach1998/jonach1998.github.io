@@ -10,14 +10,14 @@ export function Badge({
   variant = "default",
 }: BadgeProps): React.ReactElement {
   const variantClasses = {
-    default: "bg-foreground text-background",
-    secondary: "bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100",
-    outline: "border border-foreground text-foreground",
+    default: "bg-[var(--foreground)] text-[var(--background)]",
+    secondary: "bg-[var(--card-bg)] text-[var(--foreground)] border border-[var(--card-border)]",
+    outline: "border border-[var(--border)] text-[var(--foreground)] bg-transparent",
   };
 
   return (
     <span
-      className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium ${variantClasses[variant]} ${className}`}
+      className={`inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium backdrop-blur-sm ${variantClasses[variant]} ${className}`}
     >
       {children}
     </span>

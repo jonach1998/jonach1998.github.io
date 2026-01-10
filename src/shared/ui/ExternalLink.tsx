@@ -11,7 +11,7 @@ interface ExternalLinkProps extends BaseComponentProps {
 export function ExternalLink({
   href,
   children,
-  className,
+  className = "",
   target = "_blank",
   rel = "noopener noreferrer",
 }: ExternalLinkProps): React.ReactElement {
@@ -20,7 +20,7 @@ export function ExternalLink({
       href={href}
       target={target}
       rel={rel}
-      className={className}
+      className={`text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors duration-200 ${className}`}
     >
       {children}
     </Link>

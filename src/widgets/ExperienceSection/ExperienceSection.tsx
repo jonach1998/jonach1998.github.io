@@ -19,19 +19,22 @@ function ExperienceCard({
   readonly achievements: readonly string[];
 }): React.ReactElement {
   return (
-    <Card className="mb-6">
-      <div className="mb-4">
-        <h3 className="text-xl font-semibold text-foreground">{title}</h3>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+    <Card className="mb-8">
+      <div className="mb-6">
+        <h3 className="mb-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h3>
+        <p className="mb-2 text-lg text-[var(--secondary)]">
           {company} • {location}
         </p>
-        <p className="text-sm text-zinc-500 dark:text-zinc-500">
+        <p className="text-sm text-[var(--secondary)] opacity-70">
           {startDate} - {isCurrent ? "Present" : endDate}
         </p>
       </div>
-      <ul className="list-disc space-y-2 pl-6 text-zinc-700 dark:text-zinc-300">
+      <ul className="space-y-3 text-[var(--secondary)]">
         {achievements.map((achievement, index) => (
-          <li key={index}>{achievement}</li>
+          <li key={index} className="flex items-start">
+            <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)] flex-shrink-0" />
+            <span className="leading-relaxed">{achievement}</span>
+          </li>
         ))}
       </ul>
     </Card>

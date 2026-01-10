@@ -7,7 +7,7 @@ import { CertificationsSection } from "@/widgets/CertificationsSection";
 
 export default function Home(): React.ReactElement {
   return (
-    <main>
+    <main className="relative">
       <HeroSection />
       <AboutSection />
       <ExperienceSection />

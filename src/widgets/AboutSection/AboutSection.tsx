@@ -4,7 +4,7 @@ import { Section } from "@/shared/ui";
 export function AboutSection(): React.ReactElement {
   return (
     <Section id="about" title="About Me">
-      <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+      <p className="text-xl leading-relaxed text-[var(--secondary)] font-light max-w-3xl">
         {PROFILE_DATA.summary}
       </p>
     </Section>

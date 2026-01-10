@@ -12,10 +12,12 @@ export function Section({
   className = "",
 }: SectionProps): React.ReactElement {
   return (
-    <section id={id} className={`py-16 ${className}`}>
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <section id={id} className={`py-24 ${className}`}>
+      <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-12">
         {title && (
-          <h2 className="mb-8 text-3xl font-bold text-foreground">{title}</h2>
+          <h2 className="mb-12 text-5xl font-semibold tracking-tight text-foreground sm:text-6xl">
+            {title}
+          </h2>
         )}
         {children}
       </div>
