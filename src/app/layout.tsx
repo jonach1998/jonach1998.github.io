@@ -4,8 +4,43 @@ import { APP_CONFIG } from "@/shared/config";
 import "@/shared/styles/globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jonach.me"),
   title: APP_CONFIG.metadata.title,
   description: APP_CONFIG.metadata.description,
+  keywords: [
+    "Jonathan Chavarria",
+    "Python Developer",
+    "DevOps Engineer",
+    "Cloud Engineer",
+    "CI/CD",
+    "Automation",
+    "AI",
+    "AI Engineering",
+    "LLM",
+    "AWS",
+    "Terraform",
+    "FastAPI",
+    "Docker",
+    "Homelab",
+    "Costa Rica",
+  ],
+  authors: [{ name: "Jonathan Chavarria", url: "https://github.com/jonach1998" }],
+  alternates: {
+    canonical: "https://jonach.me",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://jonach.me",
+    title: APP_CONFIG.metadata.title,
+    description: APP_CONFIG.metadata.description,
+    siteName: "Jonathan Chavarria",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: APP_CONFIG.metadata.title,
+    description: APP_CONFIG.metadata.description,
+  },
 };
 
 interface RootLayoutProps {

@@ -3,8 +3,8 @@ export { EXTERNAL_LINKS, IMAGE_PATHS } from "./constants";
 export {
   PROFILE_DATA,
   WORK_EXPERIENCE,
+  PROJECTS,
   EDUCATION,
   SKILLS,
-  CERTIFICATIONS,
   LANGUAGES,
 } from "./profile.config";

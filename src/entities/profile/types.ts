@@ -3,6 +3,7 @@ export interface ContactInfo {
   readonly phone: string;
   readonly location: string;
   readonly linkedin: string;
+  readonly github: string;
 }
 
 export interface Profile {

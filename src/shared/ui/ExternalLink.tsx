@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { LinkProps as NextLinkProps } from "next/link";
 import type { BaseComponentProps } from "../types";
 
 interface ExternalLinkProps extends BaseComponentProps {
