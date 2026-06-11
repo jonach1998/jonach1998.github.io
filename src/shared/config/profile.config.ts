@@ -10,7 +10,7 @@ export const PROFILE_DATA: Profile = {
   name: "Jonathan Chavarria",
   title: "Python Developer & DevOps Engineer",
   summary:
-    "Python Developer and DevOps Engineer with 5+ years building automation, CI/CD pipelines, and data tooling adopted by Intel engineering teams. I am focused on Cloud, DevOps, and AI Engineering roles backed by production work, open-source projects, and hands-on infrastructure.",
+    "Python Developer and DevOps Engineer with 5+ years building automation, CI/CD, observability, and reliability tooling in Intel engineering environments. I focus on Cloud, DevOps, and AI Engineering: turning platform operations and production support into automated workflows, AI-assisted troubleshooting, and scalable developer tools backed by hands-on AWS, Terraform, and Kubernetes projects.",
   contact: {
     email: "jonach1998@gmail.com",
     phone: "+506 71893669",
@@ -30,9 +30,10 @@ export const WORK_EXPERIENCE: readonly WorkExperience[] = [
     endDate: "Present",
     isCurrent: true,
     achievements: [
-      "Develop Python automation scripts for LDAP directory-service integration, automating internal group synchronization and eliminating manual administration overhead.",
-      "Build large-scale Python data-analysis pipelines for operational monitoring, accelerating root-cause analysis and data-informed incident resolution.",
-      "Maintain and optimize CI/CD pipelines with JFrog Artifactory and Jenkins; troubleshoot and resolve production incidents to keep systems reliable.",
+      "Develop Python automation for LDAP directory-service integration and internal group synchronization, reducing manual administration across enterprise developer platforms.",
+      "Build Python data-analysis and operational-monitoring workflows that help identify root causes faster and support data-informed incident resolution.",
+      "Maintain and troubleshoot CI/CD and artifact-management tooling with JFrog Artifactory, Jenkins, GitHub Enterprise/1Source, Docker, and Copilot in an Intel engineering environment.",
+      "Build AI-assisted troubleshooting and proactive monitoring tooling with LLM workflows, ELK/Elasticsearch, and MCP-style integrations to scale support knowledge and surface platform issues earlier.",
     ],
   },
   {
@@ -44,12 +45,12 @@ export const WORK_EXPERIENCE: readonly WorkExperience[] = [
     endDate: "Jun 2025",
     isCurrent: false,
     achievements: [
-      "Served as Product Owner and Technical Lead for a 6-engineer team under Scrum/Kanban, driving releases for a next-gen Xeon CPU (PCIe Gen5, 200+ core architecture) shipped across millions of units — delivering every milestone on schedule despite repeated timeline pull-ins.",
-      "Architected a Python-based GitHub version-control wrapper that cut environment integration time by 99% (~1 hour to ~10 seconds), adopted as the standard tool by validation teams across multiple countries.",
-      "Owned the team's CI/CD infrastructure — automated pipelines for unit testing, integration testing, static analysis, and automated code-review suggestions — becoming the cross-product internal reference other owners replicated.",
-      "Built a centralized Python/Bash automation toolkit (OOP, SOLID) on GitHub, adopted as standard by multi-country teams and recognized by Principal Engineers for code quality and broad impact.",
-      "Founded an innovation working group and led a structured upskilling program, raising 60% of the team to advanced proficiency; one mentee was promoted to Product Owner.",
-      "Designed a product-agnostic Python + SQL (Teradata) data-extraction standard with dynamic queries, adopted by engineering and operations to monitor Product Health Indicators (PHIs).",
+      "Served as Product Owner and Technical Lead (Scrum) for a 6-engineer team on a next-gen Xeon product, delivering every milestone on schedule despite repeated timeline pull-ins; earned multiple leadership and performance recognitions.",
+      "Owned the team's CI/CD infrastructure: automated unit/integration testing, static analysis, code-standard checks, and automated code-review suggestions, becoming the cross-product reference other CI/CD owners replicated.",
+      "Created a centralized Python/Bash automation toolkit on GitHub (SOLID/OOP) adopted by PPV teams across countries, including one-command platform-boot automation that replaced manual EFI/OS steps and became the cross-team standard.",
+      "Built a product-agnostic Python + SQL (Teradata) data standard to extract and visualize large operational data volumes for Product Health Indicators (PHIs), cutting retest and test time; adopted by engineering and operations.",
+      "Integrated and validated CPU test programs released to factories and run on millions of units; reduced DPM (Defects Per Million) through test optimization and architecture-level failure debugging, raising yield.",
+      "Led a programming upskilling program (trainings, assessments, mentorship) that raised ~60% of the team to advanced level; mentored engineers, including one promoted to Product Owner.",
     ],
   },
   {
@@ -172,14 +173,18 @@ export const SKILLS: readonly SkillCategory[] = [
       "GitHub Actions",
       "Jenkins",
       "JFrog Artifactory",
+      "GitHub Enterprise / 1Source",
+      "Git LFS",
       "CI/CD Pipelines",
     ],
   },
   {
     name: "AI Engineering & Automation",
     items: [
+      "LLM Agents",
       "LLM Integration",
       "MCP Servers",
+      "RAG",
       "OpenAI-compatible APIs",
       "Prompt Engineering",
       "n8n",
@@ -196,7 +201,7 @@ export const SKILLS: readonly SkillCategory[] = [
   },
   {
     name: "Observability & Monitoring",
-    items: ["Prometheus", "Grafana", "cAdvisor", "Dynatrace", "Uptime Kuma"],
+    items: ["Elasticsearch / ELK", "Kibana", "Prometheus", "Grafana", "cAdvisor", "Dynatrace", "Uptime Kuma"],
   },
   {
     name: "Networking & Self-Hosting",
