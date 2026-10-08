@@ -12,11 +12,11 @@ const FOCUS: readonly (readonly [string, string])[] = [
   ],
   [
     "Cloud & IaC",
-    "I build practical cloud experience through AWS ECS/Terraform deployments and a 25+ service homelab.",
+    "I build hands-on cloud experience through personal AWS ECS/Terraform deployments and a 25+ service homelab.",
   ],
   [
     "Technical leadership",
-    "I have led product-owner responsibilities, mentoring, and shared tooling efforts in engineering teams.",
+    "I lead a distributed SRE/DevOps team at Keysight and previously served as Product Owner and Technical Lead at Intel.",
   ],
 ] as const;
 

@@ -12,7 +12,7 @@ export function HeroSection(): React.ReactElement {
       <div className="relative mx-auto max-w-5xl px-6 text-center sm:px-8 lg:px-12">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-2 text-sm text-[var(--secondary)] backdrop-blur-xl">
           <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-          Seeking Cloud · DevOps · AI Engineering roles
+          Open to Cloud · DevOps · AI Engineering opportunities
         </div>
 
         <h1 className="mb-6 text-6xl font-semibold tracking-tight text-foreground sm:text-7xl lg:text-8xl">
@@ -31,7 +31,7 @@ export function HeroSection(): React.ReactElement {
 
         <div className="mb-12 flex flex-wrap justify-center items-center gap-8 text-sm text-[var(--secondary)]">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-semibold text-foreground">5+</span>
+            <span className="text-2xl font-semibold text-foreground">6+</span>
             <span>Years of experience</span>
           </div>
           <div className="h-4 w-px bg-[var(--border)]" />

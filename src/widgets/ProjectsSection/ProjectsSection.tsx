@@ -3,7 +3,7 @@ import { Section, Card, Badge } from "@/shared/ui";
 
 export function ProjectsSection(): React.ReactElement {
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" title="Personal Projects">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {PROJECTS.map((project) => (
           <Card key={project.name} className="flex flex-col">

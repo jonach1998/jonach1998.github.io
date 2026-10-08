@@ -8,9 +8,9 @@ import type {
 
 export const PROFILE_DATA: Profile = {
   name: "Jonathan Chavarria",
-  title: "Python Developer & DevOps Engineer",
+  title: "Lead Site Reliability & DevOps Engineer",
   summary:
-    "Python Developer and DevOps Engineer with 5+ years building automation, CI/CD, observability, and reliability tooling in Intel engineering environments. I focus on Cloud, DevOps, and AI Engineering: turning platform operations and production support into automated workflows, AI-assisted troubleshooting, and scalable developer tools backed by hands-on AWS, Terraform, and Kubernetes projects.",
+    "Lead Site Reliability Engineer (SRE) and DevOps Engineer with 6+ years building CI/CD, automation, observability, and reliability tooling for enterprise platforms at Keysight and Intel. I'm currently leading a large-scale DevSecOps modernization of Jenkins pipelines for EU Cyber Resilience Act (CRA) compliance, and I build AI-powered tooling (RAG assistants, MCP servers, LLM agents) while deepening my cloud/IaC skills through hands-on AWS, Terraform, and Kubernetes personal projects.",
   contact: {
     email: "jonach1998@gmail.com",
     phone: "+506 71893669",
@@ -22,18 +22,32 @@ export const PROFILE_DATA: Profile = {
 
 export const WORK_EXPERIENCE: readonly WorkExperience[] = [
   {
-    title: "DevOps Engineer",
-    company: "Net2Source",
-    logo: "/logos/net2source.png",
-    location: "Heredia, Costa Rica",
-    startDate: "Mar 2026",
+    title: "Lead Site Reliability Engineer (SRE)",
+    company: "Keysight Technologies (via Insight Global)",
+    logo: "/logos/keysight.svg",
+    location: "Remote, Costa Rica",
+    startDate: "Jul 2026",
     endDate: "Present",
     isCurrent: true,
     achievements: [
-      "Develop Python automation for LDAP directory-service integration and internal group synchronization, reducing manual administration across enterprise developer platforms.",
-      "Build Python data-analysis and operational-monitoring workflows that help identify root causes faster and support data-informed incident resolution.",
-      "Maintain and troubleshoot CI/CD and artifact-management tooling with JFrog Artifactory, Jenkins, GitHub Enterprise/1Source, Docker, and Copilot in an Intel engineering environment.",
-      "Build AI-assisted troubleshooting and proactive monitoring tooling with LLM workflows, ELK/Elasticsearch, and MCP-style integrations to scale support knowledge and surface platform issues earlier.",
+      "Lead a distributed SRE/DevOps team (India, Brazil) in a DevSecOps program modernizing 1,000+ Jenkins/CloudBees CI pipelines for EU Cyber Resilience Act (CRA) compliance with the latest Jenkins Shared Library, JFrog CLI v2, and build-info provenance in JFrog Artifactory.",
+      "Built automation with GitHub Copilot on the Jira/Confluence Cloud, Jenkins, and Bitbucket REST APIs that replaced a manual spreadsheet with a live Confluence dashboard (throughput, cycle time, forecast) and Jira-vs-pipeline drift checks.",
+      "Standardized the team on GitHub Copilot after evaluating Claude Code, to reduce AI licensing costs; use it daily with MCP integrations (Jira, Confluence, Bitbucket) and LLM-based PR review.",
+    ],
+  },
+  {
+    title: "DevOps Engineer",
+    company: "Intel Corporation (via Net2Source)",
+    logo: "/logos/net2source.png",
+    location: "Heredia, Costa Rica",
+    startDate: "Mar 2026",
+    endDate: "Jul 2026",
+    isCurrent: false,
+    achievements: [
+      "Automated cleanup for Intel's multi-site JFrog Artifactory in Python (REST API, PostgreSQL), decommissioning unused repositories and clearing empty folders from a federated repository, and drove storage governance with repository owners.",
+      "Designed a RAG-based support assistant on Intel's internal GenAI platform (Claude Sonnet, pgvector) grounded in the team's Confluence knowledge base, with cited sources and guardrails, to help L2 resolve tickets without escalating to L3.",
+      "Built an ELK/Elasticsearch MCP server so AI agents can query Artifactory logs and metrics in natural language, and designed a read-only proactive monitoring agent with prompt guardrails.",
+      "Built the team's vulnerability remediation plan for Wiz, Semgrep, Dependabot, and Entra ID findings prioritized by severity and SLA, shipping upgrades that closed critical and high CVEs in an Azure Functions service; developed a pytest-covered, dry-run-by-default tool migrating Artifactory groups to LDAP-backed IAM entitlements.",
     ],
   },
   {
@@ -45,12 +59,10 @@ export const WORK_EXPERIENCE: readonly WorkExperience[] = [
     endDate: "Jun 2025",
     isCurrent: false,
     achievements: [
-      "Served as Product Owner and Technical Lead (Scrum) for a 6-engineer team on a next-gen Xeon product, delivering every milestone on schedule despite repeated timeline pull-ins; earned multiple leadership and performance recognitions.",
       "Owned the team's CI/CD infrastructure: automated unit/integration testing, static analysis, code-standard checks, and automated code-review suggestions, becoming the cross-product reference other CI/CD owners replicated.",
-      "Created a centralized Python/Bash automation toolkit on GitHub (SOLID/OOP) adopted by PPV teams across countries, including one-command platform-boot automation that replaced manual EFI/OS steps and became the cross-team standard.",
-      "Built a product-agnostic Python + SQL (Teradata) data standard to extract and visualize large operational data volumes for Product Health Indicators (PHIs), cutting retest and test time; adopted by engineering and operations.",
-      "Integrated and validated CPU test programs released to factories and run on millions of units; reduced DPM (Defects Per Million) through test optimization and architecture-level failure debugging, raising yield.",
-      "Led a programming upskilling program (trainings, assessments, mentorship) that raised ~60% of the team to advanced level; mentored engineers, including one promoted to Product Owner.",
+      "Created a Python/Bash automation toolkit (SOLID/OOP) adopted by validation teams across countries, including one-command platform-boot automation that replaced manual EFI/OS steps and became the cross-team standard.",
+      "Served as Product Owner and Technical Lead (Scrum) for a 6-engineer team on a next-gen Xeon product, delivering every milestone on schedule despite repeated pull-ins; led a programming upskilling program and mentored engineers.",
+      "Built a product-agnostic Python + SQL (Teradata) data standard to extract and visualize large operational data volumes for Product Health Indicators, cutting retest and test time; adopted by engineering and operations.",
     ],
   },
   {
@@ -165,17 +177,20 @@ export const SKILLS: readonly SkillCategory[] = [
     items: ["Python (Advanced)", "TypeScript", "Bash/Shell", "SQL"],
   },
   {
-    name: "DevOps & Containers",
+    name: "CI/CD & DevSecOps",
     items: [
-      "Docker",
-      "Docker Compose",
-      "Kubernetes (hands-on)",
+      "Jenkins / CloudBees CI",
       "GitHub Actions",
-      "Jenkins",
       "JFrog Artifactory",
-      "GitHub Enterprise / 1Source",
+      "GitHub Enterprise",
+      "Bitbucket",
       "Git LFS",
       "CI/CD Pipelines",
+      "Supply-chain Security",
+      "Wiz",
+      "Semgrep",
+      "Dependabot",
+      "Azure (Entra ID, Functions)",
     ],
   },
   {
@@ -187,6 +202,7 @@ export const SKILLS: readonly SkillCategory[] = [
       "RAG",
       "OpenAI-compatible APIs",
       "Prompt Engineering",
+      "AI Coding Agents (GitHub Copilot, Claude Code, Cursor)",
       "n8n",
       "Test Automation",
     ],
@@ -196,12 +212,30 @@ export const SKILLS: readonly SkillCategory[] = [
     items: ["FastAPI", "Flask", "NestJS", "Next.js", "Node.js", "RESTful APIs"],
   },
   {
-    name: "Cloud & IaC (hands-on)",
-    items: ["AWS (ECS Fargate, ECR, EFS, IAM, EventBridge)", "Terraform", "LocalStack"],
+    name: "Cloud & Containers (personal projects)",
+    items: [
+      "AWS (ECS Fargate, ECR, EFS, IAM, EventBridge)",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "Docker Compose",
+      "LocalStack",
+    ],
   },
   {
-    name: "Observability & Monitoring",
-    items: ["Elasticsearch / ELK", "Kibana", "Prometheus", "Grafana", "cAdvisor", "Dynatrace", "Uptime Kuma"],
+    name: "Observability & SRE",
+    items: [
+      "Elasticsearch / ELK",
+      "Kibana",
+      "Prometheus",
+      "Grafana",
+      "cAdvisor",
+      "Dynatrace",
+      "Uptime Kuma",
+      "RCA",
+      "Runbooks",
+      "Toil Automation",
+    ],
   },
   {
     name: "Networking & Self-Hosting",
@@ -215,7 +249,7 @@ export const SKILLS: readonly SkillCategory[] = [
   },
   {
     name: "Databases & Tools",
-    items: ["PostgreSQL", "MySQL", "SQLite", "Teradata", "Oracle", "Git", "Jira"],
+    items: ["PostgreSQL", "MySQL", "SQLite", "Teradata", "Oracle", "Git", "Jira / Confluence"],
   },
 ] as const;
 
